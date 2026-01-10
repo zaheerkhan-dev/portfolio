@@ -10,8 +10,43 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "ZAK.DEV | Full Stack Engineer",
-  description: "Developer Portfolio of Zak.",
+  title: "Zaheer Khan - Full Stack Web Developer",
+  description: "Building the next generation of web products. Let's create something amazing together.",
+  keywords: ["Full Stack Developer", "Web Developer", "React", "Next.js", "SaaS", "Zaheer Khan", "Portfolio"],
+  authors: [{ name: "Zaheer Khan" }],
+  creator: "Zaheer Khan",
+
+  // Favicon
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
+
+  // Open Graph (Facebook, LinkedIn, WhatsApp)
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://iamzak.xyz",
+    siteName: "Zaheer Khan - Full Stack Web Developer",
+    title: "Zaheer Khan - Full Stack Web Developer",
+    description: "Building the next generation of web products. Let's create something amazing together.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Zaheer Khan - Full Stack Web Developer",
+      },
+    ],
+  },
+
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    title: "Zaheer Khan - Full Stack Web Developer",
+    description: "Building the next generation of web products. Let's create something amazing together.",
+    images: ["/og-image.png"],
+  },
 };
 
 export const viewport: Viewport = {
