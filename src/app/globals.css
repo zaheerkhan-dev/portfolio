@@ -115,3 +115,24 @@ body {
     transform: rotateY(-20deg) rotateX(10deg) translateY(-10px);
   }
 }
+
+/* Mobile Hero Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
