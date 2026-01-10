@@ -8,7 +8,6 @@
   --foreground-rgb: 255, 255, 255;
 }
 
-/* Mobile: Full edge, no gap */
 @media (max-width: 768px) {
   :root {
     --shell-gap: 0px;
