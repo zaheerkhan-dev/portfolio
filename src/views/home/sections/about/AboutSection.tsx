@@ -87,7 +87,7 @@ export function AboutSection() {
                     {/* Name */}
                     <div className="flex flex-col">
                       <span className="text-base font-bold text-white tracking-wide">Zaheer Khan</span>
-                      <span className="text-xs text-blue-400 font-mono">aka "Zak"</span>
+                      <span className="text-xs text-blue-400 font-mono">aka &quot;Zak&quot;</span>
                     </div>
                   </div>
 
@@ -139,21 +139,31 @@ export function AboutSection() {
                 </div>
               </div>
 
-              {/* RIGHT: The Narrative */}
+              {/* RIGHT: The Narrative (blurred + cringe overlay) */}
               <div className="p-8 md:p-12 flex flex-col justify-center">
 
-                <div className="space-y-6 text-sm md:text-base text-gray-400 font-light leading-relaxed">
-                  <p>
-                    I am a Full Stack Engineer based in India. I specialize in architecting <strong className="text-white font-normal">scalable web applications</strong> that prioritize speed, security, and reliability.
-                  </p>
+                <div className="relative">
+                  {/* The original text — blurred out */}
+                  <div className="space-y-6 text-sm md:text-base text-gray-400 font-light leading-relaxed blur-[6px] select-none pointer-events-none">
+                    <p>
+                      I am a Full Stack Engineer based in India. I specialize in architecting <strong className="text-white font-normal">scalable web applications</strong> that prioritize speed, security, and reliability.
+                    </p>
 
-                  <p>
-                    I believe the best way to master architecture is to build it. I am the <strong className="text-white font-normal">Creator & Lead Engineer</strong> of <strong className="text-white font-normal">Linkryse</strong>. Building it taught me how to handle viral traffic spikes, optimize edge computing, and structure complex databases—experience I now bring to every client project.
-                  </p>
+                    <p>
+                      I believe the best way to master architecture is to build it. I am the <strong className="text-white font-normal">Creator &amp; Lead Engineer</strong> of <strong className="text-white font-normal">Linkryse</strong>. Building it taught me how to handle viral traffic spikes, optimize edge computing, and structure complex databases—experience I now bring to every client project.
+                    </p>
 
-                  <p>
-                    I believe great engineering goes unnoticed. I build systems that are robust and secure on the server, but feel <span className="text-gray-200 italic">instant and effortless</span> to the user.
-                  </p>
+                    <p>
+                      I believe great engineering goes unnoticed. I build systems that are robust and secure on the server, but feel <span className="text-gray-200 italic">instant and effortless</span> to the user.
+                    </p>
+                  </div>
+
+                  {/* Overlay message */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <p className="text-sm md:text-base text-gray-400 italic font-light text-center px-6 leading-relaxed">
+                      I reread this and felt cringe so instead of updating it I&apos;ll just blur it out. check back later LOL
+                    </p>
+                  </div>
                 </div>
 
                 {/* CTA Button */}
@@ -164,7 +174,7 @@ export function AboutSection() {
                     rel="noopener noreferrer"
                     className="w-full md:w-auto group relative inline-flex items-center justify-center gap-3 px-6 py-3 bg-[#0a0a0a] border border-[#222] rounded-xl overflow-hidden transition-all hover:border-white/50 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]"
                   >
-                    <span className="relative z-10 text-sm font-bold text-white tracking-wide">Let's build something together</span>
+                    <span className="relative z-10 text-sm font-bold text-white tracking-wide">Let&apos;s build something together</span>
                     <ArrowRight className="w-4 h-4 text-white relative z-10 group-hover:translate-x-1 transition-transform" />
 
                     {/* Hover Glow Effect */}
