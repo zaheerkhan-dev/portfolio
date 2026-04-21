@@ -37,7 +37,7 @@ export function GlitchHero() {
         <nav className="flex flex-col text-right gap-0.5 md:gap-1 text-xs md:text-sm font-bold text-gray-400">
           <a href="#about" className="hover:text-white hover:pr-2 transition-all duration-300">ABOUT ME</a>
           <a href="#projects" className="hover:text-white hover:pr-2 transition-all duration-300">PROJECTS</a>
-          <a href="/250" className="hover:text-white hover:pr-2 transition-all duration-300">250</a>
+          {/* <a href="/250" className="hover:text-white hover:pr-2 transition-all duration-300">250</a> */}
         </nav>
       </header>
 
